@@ -21,7 +21,7 @@
             color: #fff;
             font-family: "NexonLv1Gothic";
             font-weight: 300;
-            background-color: #111;
+            background-color: #333;
         }
         #parallax__title {
             position: fixed;
@@ -68,6 +68,7 @@
             background-color: rgba(0,0,0,0.4);
             padding: 15px 20px;
             border-radius: 50px;
+            text-align: center;
         }
         #parallax__nav li {
             list-style: none;
@@ -75,16 +76,20 @@
         }
         #parallax__nav li a {
             display: inline-block;
-            width: 30px; 
+            width: 80px; 
             height: 30px;
             padding: 5px;
             text-align: center;
             line-height: 30px;
+            transition: all 0.3s;
         }
         #parallax__nav li a.active {
             background: #fff;
             color: #000;
-            border-radius: 50%;
+            border-radius: 30px;
+        }
+        #parallax__nav.is-active li a {
+            width: 30px; 
         }
 
         /* parallax__cont */
@@ -180,6 +185,7 @@
             margin-left: -4vw;
             z-index: 100;
             position: relative;
+            word-break: keep-all;
         }
         .parallax__item:nth-child(even) .parallax__item__desc {
             margin-left: auto;
@@ -189,8 +195,8 @@
 </head>
 <body>
     <header id="parallax__title">
-        <h1>GSAP Parallax Effect09</h1>
-        <p>GSAP scrollTrigger - 메뉴 이동 효과</p>
+        <h1>GSAP Parallax Effect10</h1>
+        <p>GSAP scrollTrigger - 메뉴 축소 효과</p>
         <ul>
             <li><a href="gsap01.html">1</a></li>
             <li><a href="gsap02.html">2</a></li>
@@ -200,8 +206,8 @@
             <li><a href="gsap06.html">6</a></li>
             <li><a href="gsap07.html">7</a></li>
             <li><a href="gsap08.html">8</a></li>
-            <li class="active"><a href="gsap09.html">9</a></li>
-            <li><a href="gsap10.html">10</a></li>
+            <li><a href="gsap09.html">9</a></li>
+            <li class="active"><a href="gsap10.html">10</a></li>
             <li><a href="gsap11.html">11</a></li>
             <li><a href="gsap12.html">12</a></li>
             <li><a href="gsap13.html">13</a></li>
